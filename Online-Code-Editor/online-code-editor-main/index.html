@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLINE CODE EDITOR</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e1eebf8003.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <!--html editor-->
+            <label for="html"><i class="fa-brands fa-html5"></i> HTML</label>
+            <textarea id="html" onkeyup="run()"></textarea>
+             <!--css editor-->
+            <label for="css"><i class="fa-brands fa-css3"></i> CSS</label>
+            <textarea id="css" onkeyup="run()"></textarea>
+             <!--javascript editor-->
+            <label for="javascript"><i class="fa-brands fa-js"></i> JAVASCRIPT</label>
+            <textarea id="javascript" onkeyup="run()"></textarea>
+        </div>
+        <div class="right">
+            <label for="output"><i class="fa-solid fa-play"></i> OUTPUT</label>
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Link Shortener</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Link Shortener</strong></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="grid">
+            <section id="shorten">
+                <hgroup>
+                    <h2>Shorten Your URL</h2>
+                    <h3>Enter a URL to shorten it</h3>
+                </hgroup>
+                <form id="shorten-form">
+                    <input type="url" id="url" name="url" placeholder="Enter URL" aria-label="URL" required />
+                    <button type="submit" class="btn-primary">Shorten</button>
+                </form>
+                <div id="result" class="hidden">
+                    <h3>Shortened URL:</h3>
+                    <p id="shortened-url"></p>
+                </div>
+            </section>
+            <section id="about">
+                <hgroup>
+                    <h2>About</h2>
+                    <h3>Learn more about our link shortener</h3>
+                </hgroup>
+                <p>Our link shortener service allows you to easily shorten long URLs for easier sharing and tracking. Simply enter your URL above and click "Shorten" to get started.</p>
+            </section>
+        </div>
+    </main>
+    <footer class="container">
+        <small><a href="#about">About</a></small>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
