@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+section{
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(rgba(9, 1, 1, 0.949), rgba(5, 4, 4, 0.897));
+}
+section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("meeting.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(8px); /* Adjust blur effect */
+    z-index: 1;
+}
+.container{
+    width: 85%;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+nav{
+    height: 80px;
+}
+nav h1{
+    float: left;
+    line-height: 80px;
+    font-size: 35px;
+    color: #eb7620;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text shadow */
+}
+nav ul{
+    float: right;
+    line-height: 80px;  
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 0px 5px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 7px 8px;
+}
+nav ul li a:hover{
+    background-color: #eb7620;
+    transition: 0.5s ease;
+}
+nav ul li .active{
+    background-color: #eb7620;
+}
+.article{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    transform: translateY(25vh);
+    position: relative;
+    z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text shadow */
+}
+.article h1{
+    font-size: 36px;
+    color: #000000;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+.article p{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+    color: #ff0000;
+}
+.article .btn{
+    color: #fff;
+    padding: 10px 24px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #f15048;
+}
+.article .btn:hover{
+    background-color: #4399fa;
+    transition: 0.5s ease;
+}
