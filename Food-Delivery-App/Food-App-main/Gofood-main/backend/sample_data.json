@@ -1,0 +1,30 @@
+{
+  "food_items": [
+    {
+      "name": "Cheese Pizza",
+      "CategoryName": "Pizza",
+      "img": "pizza.jpg",
+      "options": [
+        {"half": "200", "full": "350"}
+      ]
+    },
+    {
+      "name": "Veg Burger",
+      "CategoryName": "Burgers",
+      "img": "burger.jpg",
+      "options": [
+        {"half": "150", "full": "250"}
+      ]
+    }
+  ],
+  "Categories": [
+    {
+      "CategoryName": "Pizza",
+      "description": "Delicious pizzas"
+    },
+    {
+      "CategoryName": "Burgers",
+      "description": "Juicy burgers"
+    }
+  ]
+}
